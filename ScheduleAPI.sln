@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScheduleAPI", "ScheduleAPI.csproj", "{CCDF8A96-477B-4FE3-A8C9-7CF636B1C937}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{BB8A8180-5C43-4F42-8D4A-7E29CC73711A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schedule.Domain", "Schedulle.Domain\Schedule.Domain.csproj", "{15B8C934-69E0-4B8B-8BDB-1E034AE5D245}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{B64D4E8C-2034-441A-A5EB-05525F108063}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +18,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{CCDF8A96-477B-4FE3-A8C9-7CF636B1C937}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CCDF8A96-477B-4FE3-A8C9-7CF636B1C937}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CCDF8A96-477B-4FE3-A8C9-7CF636B1C937}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CCDF8A96-477B-4FE3-A8C9-7CF636B1C937}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B8C934-69E0-4B8B-8BDB-1E034AE5D245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B8C934-69E0-4B8B-8BDB-1E034AE5D245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B8C934-69E0-4B8B-8BDB-1E034AE5D245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B8C934-69E0-4B8B-8BDB-1E034AE5D245}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15B8C934-69E0-4B8B-8BDB-1E034AE5D245} = {BB8A8180-5C43-4F42-8D4A-7E29CC73711A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FDBD099A-6812-4418-A564-FCBF3E99F3E9}
