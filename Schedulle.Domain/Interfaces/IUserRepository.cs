@@ -2,7 +2,7 @@
 
 namespace Domain.Interfaces
 {
-    public interface UserRepository : IBaseRepository<User>
+    public interface IUserRepository : IBaseRepository<User>
     {
         Task<User> GetUserByType(UserType type);
     }

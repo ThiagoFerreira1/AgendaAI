@@ -1,7 +1,7 @@
 ﻿namespace Schedule.Domain.Interfaces
 {
-    internal interface IUnitOfWork
+    public interface IUnitOfWork
     {
-        Task commit();
+        Task Commit();
     }
 }
