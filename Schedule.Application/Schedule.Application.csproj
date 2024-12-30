@@ -10,4 +10,19 @@
     <ProjectReference Include="..\Schedulle.Domain\Schedule.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Shared\Exceptions\" />
+    <Folder Include="Shared\Behavior\" />
+    <Folder Include="Services\" />
+    <Folder Include="UseCases\User\DeleteUser\" />
+    <Folder Include="UseCases\User\GetAllUser\" />
+    <Folder Include="UseCases\User\UpdateUser\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+  </ItemGroup>
+
 </Project>
