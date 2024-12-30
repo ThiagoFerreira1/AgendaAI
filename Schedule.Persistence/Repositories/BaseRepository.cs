@@ -16,14 +16,20 @@ namespace Schedule.Persistence.Repositories
 
         public void Create(T entity)
         {
-            entity.Created_At = DateTime.Now;
+            entity.Created_At = DateTimeOffset.UtcNow;
             Context.Add(entity);
         }
 
         public void Delete(T entity)
         {
-            entity.Deleted_At = DateTime.Now;
+            entity.Deleted_At = DateTimeOffset.UtcNow;
             Context.Remove(entity);
+        }
+
+        public void Update(T entity)
+        {
+           entity.Updated_At = DateTimeOffset.UtcNow;
+            Context.Update(entity);
         }
 
         public async Task<T> get(Guid id)
@@ -34,12 +40,6 @@ namespace Schedule.Persistence.Repositories
         public async Task<List<T>> GetAll()
         {
             return await Context.Set<T>().ToListAsync();
-        }
-
-        public void Update(T entity)
-        {
-           entity.Updated_At = DateTime.Now;
-            Context.Update(entity);
         }
     }
 }
